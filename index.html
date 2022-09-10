@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <title>AroundTheGlobe</title>
+</head>
+<body>
+  <section class="header">
+    <nav id="navbar">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="no-image"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">BOOK</a></li>
+          <li><a href="#destinations">DESTINATIONS</a></li>
+          <li><a href="#bundles">BUNDLES</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+     <div class="text-box">
+       <h1>AroundTheGlobe</h1>
+       <p>Everything you need to plan the best vacation ever.</p>
+       <a href="" class="hero-btn">Visit our brick and mortar</a>
+     </div>
+  </section>
+
+  <!---bundles----->
+
+  <section class="bundle" id="bundle">
+    <h1>Bundles we offer</h1>
+    <p>Bundles for everyone</p>
+    <div class="row">
+      <div class="bundle-col">
+        <h3>Single</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Duis aute irure dolor in reprehenderit in voluptate velit esse
+           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+           cupidatat non proident, sunt in culpa qui officia deserunt mollit
+           anim id est laborum.</p>
+      </div>
+      <div class="bundle-col">
+        <h3>Couple</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Duis aute irure dolor in reprehenderit in voluptate velit esse
+           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+           cupidatat non proident, sunt in culpa qui officia deserunt mollit
+           anim id est laborum.</p>
+      </div>
+      <div class="bundle-col">
+        <h3>Family</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Duis aute irure dolor in reprehenderit in voluptate velit esse
+           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+           cupidatat non proident, sunt in culpa qui officia deserunt mollit
+           anim id est laborum.</p>
+      </div>
+    </div>
+  </section>
+
+<!--- destinations ----->
+
+<section class="destinations" id="destinations">
+  <h1>The world's best places</h1>
+  <p>we offer you only the best destinations</p>
+  <div class="row">
+    <div class="destination-col">
+      <img src="images/destination1.png" alt="no-image">
+      <div class="layer">
+        <h3>ROME</h3>
+      </div>
+    </div>
+    <div class="destination-col">
+      <img src="images/destination2.png" alt="no-image">
+      <div class="layer">
+        <h3>KYOTO</h3>
+      </div>
+    </div>
+    <div class="destination-col">
+      <img src="images/destination3.png" alt="no-image">
+      <div class="layer">
+        <h3>EDINBURGH</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <!---javascript navbar----->
+
+<script type="text/javascript">
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+if (window.pageYOffset >= sticky) {
+  navbar.classList.add("sticky")
+} else {
+  navbar.classList.remove("sticky");
+}
+}
+</script>
+
+  <!---javascript menu management----->
+  <script type="text/javascript">
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right ="0px";
+    }
+    function hideMenu() {
+      navLinks.style.right ="-50%";
+    }
+  </script>
+</body>
+</html>
